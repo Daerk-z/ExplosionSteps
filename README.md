@@ -1,6 +1,6 @@
 # ExplosionSteps
 
-![Version](https://img.shields.io/badge/Version-1.0.0)
+![Version](https://img.shields.io/badge/Version-1.0.0-black)
 ![Spigot](https://img.shields.io/badge/Spigot-26.1.2-yellow)
 ![Java](https://img.shields.io/badge/Java-25-blue)
 
