@@ -1,0 +1,7 @@
+config:
+## Here you can change the block that should be detected so that it explodes when a playes is on it.
+## DEFAULT: GRASS_BLOCK
+## Page containing information about blocks in Minecraft: https://minecraftitemids.com
+  block_explode:
+    block: GRASS_BLOCK
+  

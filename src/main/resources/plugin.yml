@@ -1,0 +1,11 @@
+main: dev.daerk.explosionsteps.ExplosionSteps
+version: 1.0.0
+name: ExplosionSteps
+description: A plugin that makes you explode when you walk on a specific block.
+author: Daerk
+api-version: 1.21
+
+permissions:
+    xs.explode.use:
+      description: Permite que el jugador active la explosión al pararse sobre pasto
+      default: true
