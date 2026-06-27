@@ -18,7 +18,7 @@ A Minecraft plugin that make you explode if you walk on a specific block.
 
 ## Installation
 
-- Go and download the latest release [here]()
+- Go and download the latest release [here](https://github.com/Daerk-z/ExplosionSteps/releases/tag/1.0.0)
 - Download the `.jar` file
 - Put the `.jar` file in the plugin folder of your server
 - Restart your server to enable the plugin
