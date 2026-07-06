@@ -4,12 +4,14 @@ import dev.daerk.explosionsteps.ExplosionSteps;
 
 import org.bukkit.configuration.file.FileConfiguration;
 
+import java.util.List;
+
 public class FileConfigManager {
 
 
     private CustomConfig configFile;
 
-    private String block;
+    private List<String> blocks;
 
     public FileConfigManager(ExplosionSteps plugin){
         configFile = new CustomConfig("config.yml", null, plugin, false);
@@ -19,7 +21,7 @@ public class FileConfigManager {
 
     public void loadConfig(){
         FileConfiguration config = configFile.getConfig();
-        block = config.getString("config.block_explode.block");
+        blocks = config.getStringList("config.block_explode.blocks");
     }
 
     public void reloadConfig(){
@@ -27,7 +29,7 @@ public class FileConfigManager {
         loadConfig();
     }
 
-    public String getBlock(){
-        return block;
+    public List<String> getBlocks(){
+        return blocks;
     }
 }

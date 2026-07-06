@@ -24,7 +24,7 @@ public class GrassExplosionTask extends BukkitRunnable {
     public void run() {
         for (Player p : Bukkit.getOnlinePlayers()) {
             if (!p.hasPermission("xs.explode.use")) continue;
-            if (!BlockCheckUtil.isGrassBlockBelow(p, plugin)) continue;
+            if (!BlockCheckUtil.isConfiguredBlockBelow(p, plugin)) continue;
             if (!cooldown.tryUse(p.getUniqueId())) continue;
             ExplosionUtil.createExplosion(p.getLocation(), explosionPower, setFire, breakBlocks);
         }

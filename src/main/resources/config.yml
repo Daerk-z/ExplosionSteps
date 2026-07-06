@@ -11,9 +11,10 @@
 #######################################################################
 
 config:
-## Here you can change the block that should be detected so that it explodes when a playes is on it.
-## DEFAULT: GRASS_BLOCK
+## Here you can list the blocks that should be detected so that a player explodes when standing on one of them.
+## DEFAULT: [GRASS_BLOCK]
+## Add more entries to trigger on additional blocks, e.g. DIRT.
 ## Page containing information about blocks in Minecraft: https://minecraftitemids.com
   block_explode:
-    block: GRASS_BLOCK
-  
+    blocks:
+      - GRASS_BLOCK
